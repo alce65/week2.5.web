@@ -1,4 +1,5 @@
-import { foo } from './helper.js';
+import { helper, manageForm } from './helper.js';
 
-console.log('Loaded Index');
-foo();
+console.log('Loaded index');
+helper();
+manageForm();
