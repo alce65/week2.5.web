@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="De que va esto">
+  <title>Learning Web 😍</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <script src="js/index.js" type="module" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Learning Forms</h1>
+  </header>
+  <section class="section1">
+    <h2>Basic JS in HTML</h2>
+    <p>Uno</p>
+    <p>Dos</p>
+    <button class="button" data-id="1">Hola</button>
+    <button class="button" data-id="2">Adios</button>
+  </section>
+  <section class="section_form">
+    <form>
+      <div>
+        <label for="userName">User Name</label>
+        <input type="text" id="userName" name="userName" required minlength="3" maxlength="12">
+      </div>
+      <div>
+        <input type="email" placeholder="Dime tu email" name="email">
+      </div>
+      <div>
+        <label for="photo">Avatar</label>
+        <input type="file" name="photo" id="photo">
+      </div>
+      <div>
+        <label for="info">Info extre</label>
+        <textarea name="info" id="info" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="isOk">Estoy deacuerdo con ....
+        </label>
+      </div>
+
+      <div>
+        <fieldset>
+          <legend>Turno</legend>
+          <label>
+            <input type="radio" name="turn" value="m" required>Mañana
+          </label>
+          <label>
+            <input type="radio" name="turn" value="t">Tarde
+          </label>
+          <label>
+            <input type="radio" name="turn" value="n">Noche
+          </label>
+        </fieldset>
+      </div>
+      <div>
+        <label for="curso">
+          Curso
+        </label>
+        <select name="course" id="course" required>
+          <option value=""></option>
+          <option value="t">TypeScript</option>
+          <option value="a">Angular</option>
+          <option value="r">React</option>
+        </select>
+      </div>
+      <div>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </section>
+  <footer>
+    <address>ISDI Coders</address>
+  </footer>
+
+</body>
+
+</html>
